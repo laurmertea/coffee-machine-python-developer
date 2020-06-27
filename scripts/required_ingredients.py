@@ -46,4 +46,4 @@ beans = cups_number * ingredients[2]
 print(f"""For {cups_number} cups of coffee you will need:
     {water} ml of water
     {milk} ml of milk
-    {beans} g of coffee beans.W""")
+    {beans} g of coffee beans.""")
