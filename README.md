@@ -9,3 +9,6 @@ This project allows you to get a taste of Python. Practice working with function
 
 ### Stage 1: Hello, coffee!
 Write a program that puts basic information on the screen: give the machine a chance to tell the customers what it’s doing!
+
+### Stage 2: Machines have needs
+Program the machine to calculate the amount of ingredients it needs depending on how many people want some coffee.
