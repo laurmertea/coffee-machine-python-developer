@@ -15,3 +15,6 @@ Program the machine to calculate the amount of ingredients it needs depending on
 
 ### Stage 3: Enough coffee for everyone
 Working with conditions, program the machine to estimate how many creamy coffees it can make based on the amount of ingredients we enter.
+
+### Stage 4: Action!
+Upgrade your knowledge of functions – set the machine to perform three basic actions: collect the money, renew the supplies, and serve the coffee.
