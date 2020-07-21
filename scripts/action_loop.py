@@ -157,13 +157,27 @@ def make_cappucino():
     beans -= cappucino[2]
     money += cappucino[3]
 
+def check_ingredients(product):
+    if globals()[product][0] > water: 
+        return "water"
+    if globals()[product][1] > milk: 
+        return "milk"
+    if globals()[product][2] > beans: 
+        return "beans"
+    return True
+
 def buy():
     product_index = int(input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:\n"))
     
     if 1 <= product_index <= 3:
-        global cups
-        cups -= 1
-        eval("make_" + (products[product_index - 1]) + "()")
+        available = check_ingredients(products[product_index - 1])
+        if available == True:
+            print("I have enough resources, making you a coffee!")
+            global cups
+            cups -= 1
+            eval("make_" + (products[product_index - 1]) + "()")
+        else:
+            print(f"Sorry, not enough {available}!")
     else:
         print(f"{product_index} is unsupported")    
 
