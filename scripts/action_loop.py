@@ -167,7 +167,7 @@ def check_ingredients(product):
     return True
 
 def buy():
-    product_index = int(input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:\n"))
+    product_index = int(input("What do you want to buy? '1' - espresso, '2' - latte, '3' - cappuccino:\n"))
     
     if 1 <= product_index <= 3:
         available = check_ingredients(products[product_index - 1])
@@ -209,7 +209,7 @@ def exit():
     sys.exit()
 
 def main(): 
-    print("Write action (buy, fill, take, remaining, exit):")
+    print("Write action ('buy', 'fill', 'take', 'remaining', 'exit'):")
     desired_action = input().lower()
     
     while desired_action != "exit":
@@ -217,7 +217,7 @@ def main():
             eval(desired_action + "()")
         else:
             print(f"{desired_action} is unsupported")
-        print("Write action (buy, fill, take, remaining, exit):")
+        print("Write action ('buy', 'fill', 'take', 'remaining', 'exit'):")
         desired_action = input().lower()
     exit()
 
