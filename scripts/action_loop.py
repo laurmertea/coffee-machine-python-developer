@@ -189,7 +189,7 @@ def remaining():
     print(f"{milk} of milk\n")
     print(f"{beans} of coffee beans\n")
     print(f"{cups} of disposable cups\n")
-    print(f"{money} of money\n")
+    print(f"${money} of money\n")
 
 def exit():
     sys.exit()
