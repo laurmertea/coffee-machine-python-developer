@@ -18,3 +18,6 @@ Working with conditions, program the machine to estimate how many creamy coffees
 
 ### Stage 4: Action!
 Upgrade your knowledge of functions – set the machine to perform three basic actions: collect the money, renew the supplies, and serve the coffee.
+
+### Stage 5: On a coffee loop
+Program the machine to display on the screen the amount of supplies left. Set the main loop: now the menu keeps updating until you enter “exit”.
