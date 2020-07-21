@@ -167,19 +167,21 @@ def check_ingredients(product):
     return True
 
 def buy():
-    product_index = int(input("What do you want to buy? '1' - espresso, '2' - latte, '3' - cappuccino:\n"))
+    choice = input("What do you want to buy [type 'back' to cancel]? '1' - espresso, '2' - latte, '3' - cappuccino:\n")
     
-    if 1 <= product_index <= 3:
-        available = check_ingredients(products[product_index - 1])
-        if available == True:
-            print("I have enough resources, making you a coffee!")
-            global cups
-            cups -= 1
-            eval("make_" + (products[product_index - 1]) + "()")
+    if choice != "back":
+        product_index = int(choice)
+        if 1 <= product_index <= 3:
+            available = check_ingredients(products[product_index - 1])
+            if available == True:
+                print("I have enough resources, making you a coffee!")
+                global cups
+                cups -= 1
+                eval("make_" + (products[product_index - 1]) + "()")
+            else:
+                print(f"Sorry, not enough {available}!")
         else:
-            print(f"Sorry, not enough {available}!")
-    else:
-        print(f"{product_index} is unsupported")    
+            print(f"{product_index} is unsupported")    
 
 def fill():
     global water
