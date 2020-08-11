@@ -21,3 +21,6 @@ Upgrade your knowledge of functions – set the machine to perform three basic a
 
 ### Stage 5: On a coffee loop
 Program the machine to display on the screen the amount of supplies left. Set the main loop: now the menu keeps updating until you enter “exit”.
+
+### Stage 6: Brush up your code
+Time for some final touch-ups: structure the code so that it runs smoothly.
