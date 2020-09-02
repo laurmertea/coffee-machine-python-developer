@@ -98,3 +98,9 @@
 # 0 of money
 # Write action (buy, fill, take, remaining, exit):
 # > exit
+
+import sys
+from classes.coffee_machine import CoffeeMachine
+
+machine = CoffeeMachine()
+machine.main()
